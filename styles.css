@@ -1,0 +1,92 @@
+/* color{
+    background-color: rgb(14, 7, 7);
+} */
+body{
+    display: grid;
+    /* justify-content: center; */
+    height: 100vh;
+    background: url(images/bubble-float.gif);
+     /* background: linear-gradient(270deg, rgba(85, 85, 29, 0.984) 40%, rgba(73, 107, 77, 0.782) 98%);  */
+    background-size: 100% 97%; 
+ animation: gradient-animation 3s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 100% 50%; }
+  50% { background-position: 50% 0%; }
+  75% { background-position: 50% 100%; }
+  100% { background-position: 0% 50%; }
+} 
+#output {
+            margin-top: 20px;
+            
+            padding: 10px;
+            min-height: 50px;
+            color: white;
+        }
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    /* background: #fff; */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* background:url(images/animate.gif) no-repeat;
+  background-size: 100% 97%; */
+  
+}
+.container:hover {
+    max-width: 600px;
+    margin: 0 auto;
+    /* background: #fff; */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    translate: 1% 1%;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+#commandInput {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#createButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#createButton:hover {
+    background-color: #218838;
+}
+table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+            border: 1px solid black; /* Border for the table */
+            color: white;
+        }
+        td {
+            border: 1px solid black; /* Border for the cells */
+            padding: 5px;
+            text-align: center;
+            color: white;
+        }
+.footer{
+    margin-top: 280px;
+    color: rgb(53, 82, 66);
+}
